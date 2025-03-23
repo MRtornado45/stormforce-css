@@ -1,0 +1,301 @@
+/* Main window */
+QMainWindow {
+    background-color: #0F1117; /* --background */
+    color: #FFFFFF; /* --text-primary */
+}
+
+/* Top bar */
+#topBar {
+    background-color: #1A1A2E; /* --surface */
+    border-bottom: 1px solid #2A2A3C; /* --border */
+}
+
+/* Status container */
+#statusContainer {
+    background-color: transparent;
+}
+
+/* FPS label */
+#fpsLabel {
+    color: #44FF44; /* --success */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Status label */
+#statusLabel {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#statusLabel[enabled="true"] {
+    color: #44FF44; /* --success */
+    background-color: rgba(68, 255, 68, 0.1); /* --success with opacity */
+}
+
+#statusLabel[enabled="false"] {
+    color: #FF4444; /* --error */
+    background-color: rgba(255, 68, 68, 0.1); /* --error with opacity */
+}
+
+/* Hotkeys label */
+#hotkeysLabel {
+    color: #9CA3AF; /* --text-secondary */
+    font-size: 14px;
+}
+
+/* Close button */
+#closeButton {
+    background-color: transparent;
+    color: #FFFFFF; /* --text-primary */
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#closeButton:hover {
+    background-color: #FF4444; /* --error */
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #1A1A2E; /* --surface */
+    min-width: 60px;
+    max-width: 60px;
+}
+
+/* Logo container */
+#logoContainer {
+    background-color: #2A2A3C; /* --secondary */
+    min-height: 60px;
+}
+
+/* Logo label */
+#logoLabel {
+    color: #7E6EE1; /* --primary */
+    font-size: 24px;
+}
+
+/* Navigation buttons */
+#navButton {
+    background-color: transparent;
+    border: none;
+    color: #9CA3AF; /* --text-secondary */
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#navButton:hover {
+    background-color: #2A2A3C; /* --secondary */
+    color: #FFFFFF; /* --text-primary */
+}
+
+#navButton:checked {
+    background-color: #7E6EE1; /* --primary */
+    color: #FFFFFF; /* --text-primary */
+}
+
+/* Version label */
+#versionLabel {
+    color: #9CA3AF; /* --text-secondary */
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Page title */
+#pageTitle {
+    color: #FFFFFF; /* --text-primary */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Settings container */
+#settingsContainer {
+    background-color: #1A1A2E; /* --surface */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Setting labels */
+#settingLabel {
+    color: #FFFFFF; /* --text-primary */
+    font-size: 14px;
+}
+
+/* Sliders */
+QSlider::groove:horizontal {
+    border: 1px solid #2A2A3C; /* --border */
+    height: 8px;
+    background: #0F1117; /* --background */
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #7E6EE1; /* --primary */
+    border: none;
+    width: 16px;
+    margin: -4px 0;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #635BFF; /* --primary-hover */
+}
+
+/* Checkboxes */
+QCheckBox {
+    color: #FFFFFF; /* --text-primary */
+    font-size: 14px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #2A2A3C; /* --border */
+    border-radius: 4px;
+    background-color: #0F1117; /* --background */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #7E6EE1; /* --primary */
+    border-color: #7E6EE1; /* --primary */
+}
+
+QCheckBox::indicator:hover {
+    border-color: #7E6EE1; /* --primary */
+}
+
+/* Combo boxes */
+QComboBox {
+    background-color: #0F1117; /* --background */
+    border: 1px solid #2A2A3C; /* --border */
+    border-radius: 4px;
+    color: #FFFFFF; /* --text-primary */
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border: none;
+}
+
+QComboBox:hover {
+    border-color: #7E6EE1; /* --primary */
+}
+
+/* Feature labels */
+#featureLabel {
+    color: #FFFFFF; /* --text-primary */
+    font-size: 14px;
+    padding: 10px;
+    background-color: #2A2A3C; /* --secondary */
+    border-radius: 5px;
+}
+
+/* Help text */
+#helpText {
+    background-color: #0F1117; /* --background */
+    color: #FFFFFF; /* --text-primary */
+    border: none;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Settings group */
+#settingsGroup {
+    color: #FFFFFF; /* --text-primary */
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2A2A3C; /* --secondary */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Keybind buttons */
+#keybindButton {
+    background-color: #0F1117; /* --background */
+    color: #FFFFFF; /* --text-primary */
+    border: 1px solid #2A2A3C; /* --border */
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#keybindButton:hover {
+    border-color: #7E6EE1; /* --primary */
+}
+
+/* Reset and save buttons */
+#resetButton, #saveButton {
+    background-color: #2A2A3C; /* --secondary */
+    color: #FFFFFF; /* --text-primary */
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#resetButton:hover, #saveButton:hover {
+    background-color: #635BFF; /* --primary-hover */
+}
+
+#saveButton {
+    background-color: #44FF44; /* --success */
+}
+
+#saveButton:hover {
+    background-color: #635BFF; /* --primary-hover (could use a darker success shade if desired) */
+}
+
+/* Dialog */
+QDialog {
+    background-color: #1A1A2E; /* --surface */
+}
+
+#dialogMessage {
+    color: #FFFFFF; /* --text-primary */
+    font-size: 16px;
+}
+
+#keyLabel {
+    color: #7E6EE1; /* --primary */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #0F1117; /* --background */
+    width: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #7E6EE1; /* --primary */
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #635BFF; /* --primary-hover */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+    background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
